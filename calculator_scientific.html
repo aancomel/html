@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="calculator_scientific.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- Kalkulator -->
+    <div class="calculator">
+        <input type="text" id="display" class="display" disabled>
+        
+        <div class="button-row">
+            <button class="button button-clear" onclick="clearDisplay()">C</button>
+            <button class="button" onclick="appendToDisplay('(')">(</button>
+            <button class="button" onclick="appendToDisplay(')')">)</button>
+            <button class="button" onclick="appendToDisplay('/')">/</button>
+        </div>
+        <div class="button-row">
+            <button class="button" onclick="appendToDisplay('7')">7</button>
+            <button class="button" onclick="appendToDisplay('8')">8</button>
+            <button class="button" onclick="appendToDisplay('9')">9</button>
+            <button class="button" onclick="appendToDisplay('*')">*</button>
+        </div>
+        <div class="button-row">
+            <button class="button" onclick="appendToDisplay('4')">4</button>
+            <button class="button" onclick="appendToDisplay('5')">5</button>
+            <button class="button" onclick="appendToDisplay('6')">6</button>
+            <button class="button" onclick="appendToDisplay('-')">-</button>
+        </div>
+        <div class="button-row">
+            <button class="button" onclick="appendToDisplay('1')">1</button>
+            <button class="button" onclick="appendToDisplay('2')">2</button>
+            <button class="button" onclick="appendToDisplay('3')">3</button>
+            <button class="button" onclick="appendToDisplay('+')">+</button>
+        </div>
+        <div class="button-row">
+            <button class="button" onclick="appendToDisplay('0')">0</button>
+            <button class="button" onclick="appendToDisplay('.')">.</button>
+            <button class="button-wide" onclick="calculate()">=</button>
+        </div>
+        <div class="button-row">
+            <button class="button" onclick="sqrt()">√</button>
+            <button class="button" onclick="sin()">sin</button>
+            <button class="button" onclick="cos()">cos</button>
+            <button class="button" onclick="tan()">tan</button>
+        </div>
+        <div class="button-row">
+            <button class="button" onclick="square()">x²</button>
+            <button class="button" onclick="log()">log</button>
+            <button class="button" onclick="exp()">exp</button>
+            <button class="button" onclick="pi()">π</button>
+        </div>
+    </div>
+
+    <!-- Kelompok 11 -->
+    <div class="group-info">
+        <h2 class="flashing">Kelompok 11</h2>
+        <ul>
+            <li>1. Andri Kurniawan</li>
+            <li>2. Muhammad Syafi' Alaudinsyah Asman</li>
+            <li>3. Muhammad Zimi</li>
+        </ul>
+    </div>
+</div>
+
+<script src="calculator_scientific.js"></script>
+</body>
+</html>
